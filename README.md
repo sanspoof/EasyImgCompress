@@ -1,3 +1,9 @@
 # EasyImgCompress
 
-Just run index.js with the directory setup with images in src and you're away.
+Clone the repo
+
+Run **npm install**
+
+If needed, change the directory of the images.
+
+Run **node index.js**
