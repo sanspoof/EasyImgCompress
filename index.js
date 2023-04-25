@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
 
+// changes these based on directory structure..
 const inputDirectory = './src/img';
 const outputDirectory = './dist/img';
 
@@ -13,7 +14,7 @@ fs.readdir(inputDirectory, (err, files) => {
   console.log(files);
 
   files.forEach((file) => {
-    // Check if the file is an image (you may need to adjust this check depending on your file types)
+    // Check if the file is an image, might need adjusting for different image types...?
     if (file.endsWith('.jpg') || file.endsWith('.jpeg') || file.endsWith('.png')) {
       const inputFilePath = path.join(inputDirectory, file);
       const outputFilePath = path.join(outputDirectory, `${file.slice(0, -4)}.jpg`);
