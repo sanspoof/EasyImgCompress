@@ -12,7 +12,9 @@ fs.readdir(inputDirectory, (err, files) => {
     return;
   }
   console.log(files);
-
+  
+// change the extensions below based on your use case...
+  
   files.forEach((file) => {
     // Check if the file is an image, might need adjusting for different image types...?
     if (file.endsWith('.jpg') || file.endsWith('.jpeg') || file.endsWith('.png')) {
