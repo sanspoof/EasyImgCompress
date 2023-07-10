@@ -8,4 +8,4 @@ If needed, change the directory of the images, but keeping src / dist is good pr
 
 To run the functions from the command line, just run the below...
 
-Run **node index.js <function name>**
+Run **node index.js <functionname>**
